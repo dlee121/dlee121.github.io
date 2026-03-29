@@ -1,1 +1,111 @@
-<!doctype html><meta charset="utf-8"><title>Verification</title><a href="/app-ads.txt">app-ads.txt</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Number Blitz: Speed Math</title>
+    <meta name="description" content="One mistake ends it all! Put your brain on the clock, represent your country, and see how fast you really are." />
+    <link rel="icon" href="/assets/icon.png" />
+    <style>
+      *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+      :root{
+        --bg:#0d0d0f;
+        --surface:#16161a;
+        --border:rgba(255,255,255,.08);
+        --fg:#f0ece6;
+        --muted:#9e9a93;
+        --accent:#d4a574;
+        --accent2:#c17f4e;
+        --radius:18px;
+      }
+      html{-webkit-text-size-adjust:100%}
+      body{
+        background:var(--bg);
+        color:var(--fg);
+        font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+        min-height:100dvh;
+        display:flex;flex-direction:column;
+      }
+      a{color:var(--accent);text-decoration:none}
+      a:hover{text-decoration:underline}
+
+      .hero{
+        flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+        text-align:center;padding:64px 24px 48px;
+        background:
+          radial-gradient(ellipse 800px 500px at 30% 0%,rgba(212,165,116,.18),transparent),
+          radial-gradient(ellipse 600px 400px at 70% 10%,rgba(193,127,78,.14),transparent);
+      }
+      .icon{width:120px;height:120px;border-radius:28px;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+      .hero h1{font-size:clamp(28px,5vw,42px);font-weight:700;margin:28px 0 8px;letter-spacing:-.02em}
+      .hero .tagline{font-size:clamp(15px,2.5vw,18px);color:var(--muted);max-width:420px;margin:0 auto 36px}
+
+      .features{
+        display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;
+        max-width:520px;width:100%;margin:0 auto 40px;
+      }
+      .feat{
+        background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+        padding:20px 16px;text-align:center;
+      }
+      .feat span{font-size:28px;display:block;margin-bottom:8px}
+      .feat strong{font-size:14px;display:block;color:var(--fg)}
+      .feat small{font-size:12px;color:var(--muted)}
+
+      .badges{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:40px}
+      .badges a img{height:44px;border-radius:8px}
+
+      .links{display:flex;gap:24px;flex-wrap:wrap;justify-content:center}
+      .links a{font-size:14px;color:var(--muted)}
+      .links a:hover{color:var(--accent)}
+
+      footer{
+        text-align:center;padding:24px;font-size:12px;color:var(--muted);
+        border-top:1px solid var(--border);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <img class="icon" src="/assets/icon.png" alt="Number Blitz app icon" width="120" height="120" />
+      <h1>Number Blitz</h1>
+      <p class="tagline">One mistake ends it all! Put your brain on the clock, represent your country, and see how fast you really are.</p>
+
+      <div class="features">
+        <div class="feat">
+          <span>&#x2795;</span>
+          <strong>Addition</strong>
+          <small>Speed &amp; accuracy</small>
+        </div>
+        <div class="feat">
+          <span>&#x2796;</span>
+          <strong>Subtraction</strong>
+          <small>Think fast</small>
+        </div>
+        <div class="feat">
+          <span>&#x2716;</span>
+          <strong>Multiplication</strong>
+          <small>Beat the clock</small>
+        </div>
+        <div class="feat">
+          <span>&#x1F500;</span>
+          <strong>Mix Mode</strong>
+          <small>All operations</small>
+        </div>
+      </div>
+
+      <div class="badges">
+        <a href="https://apps.apple.com/app/number-blitz-speed-math/id6738044588">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+        </a>
+      </div>
+
+      <nav class="links">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/support/">Support</a>
+      </nav>
+    </section>
+
+    <footer>&copy; 2025 Number Blitz</footer>
+  </body>
+</html>
